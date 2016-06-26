@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sophiaxinlu.singlepageapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/page_container"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@color/yellow">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height= "wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_size"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/page_title"
+                android:id="@+id/page_title"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/insight_img"
+                android:layout_gravity="center"
+                android:src="@drawable/insight"
+                android:clickable="true"
+                android:layout_below="@+id/page_title"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height= "wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size"
+                android:text="@string/product_title"
+                android:id="@+id/product_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height= "wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size"
+                android:text="@string/product_sub_title"
+                android:id="@+id/product_sub_title"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height= "wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size"
+                android:text="@string/product_content"
+                android:id="@+id/product_intro"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/phone_icon"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/phone"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height= "wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/phone"
+                    android:id="@+id/phone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/location_icon"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    android:src="@drawable/location"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height= "wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/address"
+                    android:id="@+id/address"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

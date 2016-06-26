@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Single Page App</string>
+    <string name="action_settings">Settings</string>
+    <string name="page_title">WEMO THAT</string>
+    <string name="phone">(01)310-880-XXXX</string>
+    <string name="address">XXXXX, Los Angeles, CA 90049</string>
+    <string name="product_title">IRON STILL ON? KEEP YOUR COOL</string>
+    <string name="product_sub_title">WEMO® Insight Switch</string>
+    <string name="product_content">Get the most out of appliances and electronics like lights, TVs, fans, washers, dryers, wall A/C units and more with the WEMO Insight Switch. Once you download the free WEMO App to your mobile, you can turn any plugged-in device on or off, monitor energy usage, and set-up customized notifications from here, there, and anywhere.</string>
+</resources>
